@@ -1,0 +1,208 @@
+
+
+
+
+body {
+  background-color: white;
+}
+
+.App {
+background: #1e1e24;
+
+}
+
+
+
+.App {
+  .sectionbutton {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #27292e;
+
+
+  }
+
+  .sectionchatroom {
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #161819;
+
+
+  }
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  //margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #27292e;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #27292e;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+
+
+
+}
+
+
+form {
+  @media screen and (max-device-width: 1024px) {
+    input {
+      line-height: 1.5;
+      width: 100%;
+      font-size: 1.5rem;
+      background: #27292e;
+      color: white;
+      outline: none;
+      border: none;
+      padding: 0 10px;
+    }
+    .submit-button {
+      background-color: #b0b0b2;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+
+    .submit-button-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+  }
+  @media screen and (min-device-width: 1024px) {
+    input {
+      line-height: 1.5;
+      width: 100%;
+      font-size: 1.5rem;
+      background: #27292e;
+      color: white;
+      outline: none;
+      border: none;
+      padding: 0 10px;
+    }
+    .submit-button {
+      background-color: #b0b0b2;
+      //width: auto;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+
+    .submit-button-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+  }
+
+
+
+
+
+}
+
+
+  .sign-in {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    color: black;
+    background: white;
+    max-width: 400px;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+
+    text-decoration: none;
+
+
+  }
+
+.black {
+  color: black;
+}
+
+
+  p {
+    max-width: 500px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .message {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .sent {
+    flex-direction: row-reverse;
+  }
+
+  .sent p {
+    color: white;
+    background: #387aff;
+    align-self: flex-end;
+  }
+  .received p {
+    background: #27292e;
+    color: white;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+    position: relative;
+    top: -0.6vh;
+  }
+
