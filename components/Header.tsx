@@ -1,7 +1,7 @@
 "use client"; // This is a client component
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import Link from "next/link";
 import classes from "./style/header.module.scss";
 
@@ -23,7 +23,7 @@ export default function Header () {
                         <Link href={'/patchnote'} className="nav-link active" > Патчноут  </Link>
                         <Link className="nav-link active" href={"/lore"}>Лор </Link>
                         <NavDropdown title="Части" id="basic-nav-dropdown">
-                            {/*<Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link>*/}
+                            <Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link>
 
                             <Link href={'/spinOff'} className="dropdown-item" >  Спин-Оффы</Link>
 
