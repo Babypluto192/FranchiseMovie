@@ -75,7 +75,7 @@ form {
 
 
 form {
-  @media screen and (max-device-width: 1024px) {
+  @media screen and (max-device-width: 912px) {
     input {
       line-height: 1.5;
       width: 100%;
@@ -88,6 +88,7 @@ form {
     }
     .submit-button {
       background-color: #b0b0b2;
+      width: 40vw;
       border: none;
       color: white;
       padding: 15px 32px;
@@ -104,7 +105,7 @@ form {
     }
 
   }
-  @media screen and (min-device-width: 1024px) {
+  @media screen and (min-device-width: 912px) {
     input {
       line-height: 1.5;
       width: 100%;

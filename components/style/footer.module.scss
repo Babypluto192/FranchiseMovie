@@ -1,3 +1,12 @@
+@media screen and (max-device-width: 650px){
+    .footer{
+        opacity: 0;
+    }
+}
+@media screen  and (min-device-width: 650px){
+
+}
+
 .footer {
     position:fixed;
     left:0;
