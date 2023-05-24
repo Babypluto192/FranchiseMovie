@@ -6,7 +6,7 @@ export default  function Page () {
         <div>
 
             <h1 className={classes.h1}>Это Трейлеры Дамирсынба</h1>
-            <audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>
+            {/*<audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>*/}
         </div>
     );
 };

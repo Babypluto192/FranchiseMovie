@@ -4,7 +4,7 @@ export default  function patchnote ()   {
         <div>
 
             <h1 className={classes.h1} >Это Патч ноут Дамирсынба</h1>
-            <audio src="/jhoncena.mp3" autoPlay  className={classes.audio}></audio>
+            {/*<audio src="/jhoncena.mp3" autoPlay  className={classes.audio}></audio>*/}
         <div>
             <ul className={classes.ul} > <h3 className={classes.h3}>  0.01 Самая первая версия сайта</h3>
                 <li>
