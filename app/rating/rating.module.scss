@@ -11,3 +11,46 @@
   align-content: center;
   justify-content: center;
 }
+
+.table {
+  width: 97%;
+  border-radius: 0.5%;
+  margin-left: 1vw;
+  background-color: #1b0c2d;
+
+
+  tr {
+    color: white;
+  }
+  Tr {
+    color: white;
+
+  }
+}
+
+.createLineLeft {
+  border-right: 1px solid #393939;
+}
+
+.createLineLeft2 {
+  border-right: 1px solid #393939;
+  padding-left: 0.5vw;
+}
+
+.image {
+  border-radius: 25%;
+  padding: 0.5vh;
+
+
+}
+
+
+.toScrol {
+  @media screen and (max-device-width: 650px) {
+    display: none;
+
+  } @media screen and (min-device-width: 650px) {
+  opacity: 0;
+}
+}
+
