@@ -24,7 +24,7 @@ export default function Header () {
                         <Link className="nav-link active" href={"/lore"}>Лор </Link>
                         <NavDropdown title="Части" id="basic-nav-dropdown">
 
-                            <Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link>
+                                {/*<Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link> }*/}
 
                             <Link href={'/spinOff'} className="dropdown-item" >  Спин-Оффы</Link>
 
