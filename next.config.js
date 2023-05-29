@@ -23,6 +23,13 @@ module.exports = {
                 port: "",
                 pathname: "**",
             },
+            {
+                protocol: "https",
+                hostname: "sun**-**.userapi.com",
+                port: "",
+                pathname: "**",
+            },
+
         ],
     },
 }
