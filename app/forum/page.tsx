@@ -7,7 +7,7 @@ import "firebase/auth";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {useCollectionData} from "react-firebase-hooks/firestore"
 import {useState} from "react";
-import "./forum.scss"
+import classes from "./forum.module.scss";
 
 if (!firebase.apps.length) {
     firebase.initializeApp({
@@ -30,13 +30,13 @@ const firestore = firebase.firestore();
 
 export default  function Page  ()  {
     const [user] = useAuthState(auth);
-    const sectionClass = user ? "chatroom" : "button"
+    const sectionClass = user ? classes.sectionchatroom : classes.sectionbutton
     return (
        <>
-           <div className="App">
+           <div className={classes.App}>
             <SignOut/>
 
-            <section className={`section${sectionClass}`}>
+            <section className={sectionClass}>
                 {user ? <ChatRoom/> : <SignIn/>}
             </section>
 
@@ -99,15 +99,15 @@ function ChatRoom() {
 
     return(
         <>
-            <main>
+            <main className={classes.main}>
             {messages && messages.map(msg => <ChatMessage key={msg.id} message = {msg}/>)}
             </main>
-            <form onSubmit={sendMessage}>
+            <form onSubmit={sendMessage} className={classes.form}>
 
-                <input value={formValue} onChange={(e) => setFormValue(e.target.value)}/>
+                <input value={formValue} onChange={(e) => setFormValue(e.target.value)} className={classes.input}/>
 
 
-                <button className="submit-button" type="submit" > Отправить сообщение </button>
+                <button className={classes.submitButton} type="submit" > Отправить сообщение </button>
             </form>
         </>
     )
@@ -118,7 +118,7 @@ function ChatMessage(props:any) {
     const {text , uid, photoURL} = props.message;
     let image;
     // @ts-ignore
-    const MessageClass = uid === auth.currentUser.uid ? "sent" : 'received'
+    const MessageClass = uid === auth.currentUser.uid ? classes.sent :   classes.received
 
     if(photoURL) {
         image = photoURL
@@ -126,11 +126,11 @@ function ChatMessage(props:any) {
         image = "/placeholder-image.png"
     }
     return (
-        <div className={`message ${MessageClass}`}>
+        <div className={`${classes.message} ${MessageClass} `}>
 
-            <Image src={image } alt ="Profile picture" width={40} height={40}>
+            <Image src={image} alt ="Profile picture" width={40} height={40} className={classes.img}>
             </Image>
-            <p>{text}</p>
+            <p className={classes.p}>{text}</p>
         </div>
     )
 }
