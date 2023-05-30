@@ -13,13 +13,6 @@ import Eror from "@/components/eror";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
 const Page = ({params} : {params: {id:number}}) => {
-    const [info, setInfo] = useState(1);
-
-    function Handleclick(value: number) {
-        setInfo(value)
-
-    }
-
     let data:IHeroes;
     let erorCount:number = 0;
     for(let i = 0; i < heroes.length; i++){
@@ -35,6 +28,14 @@ const Page = ({params} : {params: {id:number}}) => {
         // @ts-ignore
         return (<Eror> </Eror>)
     }
+    const [info, setInfo] = useState(1);
+
+    function Handleclick(value: number) {
+        setInfo(value)
+
+    }
+
+
     function Switcher() {
         return ( <>
                 <NextImage src={data.photo || "/placeholder-image.png"} alt={data.name} width={600} height={400} className={classes.image}
