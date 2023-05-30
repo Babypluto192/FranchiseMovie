@@ -20,8 +20,8 @@ const Page = ({params} : {params: {id:number}}) => {
 
     }
 
-    let data;
-    let erorCount = 0;
+    let data:IHeroes;
+    let erorCount:number = 0;
     for(let i = 0; i < heroes.length; i++){
         if(heroes[i].id == params.id) {
             data = heroes[i]
@@ -32,7 +32,6 @@ const Page = ({params} : {params: {id:number}}) => {
     }
 
     if(erorCount === heroes.length) {
-
         return (<Eror> </Eror>)
     }
     function Switcher() {
