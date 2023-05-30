@@ -12,10 +12,24 @@ import {heroes} from "@/app/heroes/[id]/heroes";
 import Eror from "@/components/eror";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
-
+let data:IHeroes =  {
+    id: 21,
+    name: "Дамирсынба",
+    photo: "/damirsinba.png",
+    podzagolovok: "Гачи бос",
+    description: "Он был обычным мальчиком, пока ему не написал Суслан Рапаргалиев, он снимается в фильме,\n" +
+        "                            зазвиждается и мудрец превращает его в шампунь ....",
+    firstappearance: "Дамирсынба 1",
+    lastappearance: "Дамирсынба 18",
+    awards: [""],
+    ultimateName: "Гачи бос",
+    ultimateUrl: "",
+    actor: "Дамир",
+    voiceActor: "Дамир"
+}
 const Page = ({params} : {params: {id:number}}) => {
     const [info, setInfo] = useState(1);
-    let data:IHeroes;
+
     let erorCount:number = 0;
 
     for(let i = 0; i < heroes.length; i++){
