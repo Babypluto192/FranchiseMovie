@@ -32,6 +32,7 @@ const Page = ({params} : {params: {id:number}}) => {
     }
 
     if(erorCount === heroes.length) {
+        // @ts-ignore
         return (<Eror> </Eror>)
     }
     function Switcher() {
@@ -106,7 +107,7 @@ const Page = ({params} : {params: {id:number}}) => {
                 </>
 
             )
-            break;
+
         case 2:
             return (
                 <>
@@ -137,7 +138,7 @@ const Page = ({params} : {params: {id:number}}) => {
 
                 </>
             )
-            break;
+
         case 3:
             return (
                 <>
@@ -166,7 +167,7 @@ const Page = ({params} : {params: {id:number}}) => {
 
                 </>
             )
-            break;
+
         case 4:
             return (
                 <>
@@ -196,7 +197,7 @@ const Page = ({params} : {params: {id:number}}) => {
 
                 </>
             )
-            break;
+
         case 5:
             return (
                 <>
@@ -231,7 +232,6 @@ const Page = ({params} : {params: {id:number}}) => {
 
                 </>
             )
-            break;
         default:
             break;
 
