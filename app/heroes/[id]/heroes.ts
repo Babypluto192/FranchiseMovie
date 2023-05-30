@@ -10,7 +10,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun9-68.userapi.com/impg/iMzhIG4M9WNeI-1wVwrbvQm54G60hytJSxgE-w/XyA7k7rjcGM.jpg?size=1920x1080&quality=96&sign=23a5fce9bd74fdf6a9a7cf9e9fb37818&type=album","https://sun9-77.userapi.com/impg/QbZifoI9Fe_2ULjHIecaAe2eVFZ0vXzMPexMXQ/JJUXMjSsXMY.jpg?size=1920x1080&quality=96&sign=af572b7805637855f37ff5c13317e3d7&type=album", "https://sun9-69.userapi.com/impg/PEIMwZQRzenqMTcg8mCTqjK0KfG7ai8qoIoyyw/AZF6frO-cVc.jpg?size=1920x1080&quality=96&sign=9ed6bc3844678adb74135ca6279a24b1&type=album", "https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album", "https://sun9-14.userapi.com/impg/pdJ9I-OOAgMwiI0kYPTokG51t4ffIiRrKe_pHw/xWNizVd2f6k.jpg?size=1920x1080&quality=96&sign=549dadad4d78217426c0fbea737e387d&type=album"],
         ultimateName: "Гачи бос",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-43.userapi.com/impg/tuoWrP9u__fkT3vvldTyTC4kQpVMR1Yuv2WqoA/kBxGCPbxSLw.jpg?size=636x372&quality=96&sign=08ef1b470f55dad66bc2ebe13a946eed&type=album",
         actor: "Дамир",
         voiceActor: "Дамир"
     },
@@ -24,7 +24,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 11",
         awards: ["https://sun9-28.userapi.com/impg/b0oTRLS-gKZSWBF06PJW5SxCfK7sOJipgc09bA/ChykNTdBvhg.jpg?size=1280x720&quality=96&sign=828b8d605aeb3930b624239c6b3e44c8&type=album","https://sun9-21.userapi.com/impg/8AQrd7qS3hauWwMLzL_IbkcOOQULcz_enFQUcw/SsWXNGwLPds.jpg?size=1280x720&quality=96&sign=0697b77e10db5d4aa7e9bc7ab0a8e59f&type=album", "https://sun9-37.userapi.com/impg/KH6Uv3CIgjwQQzyXi2rW3tISDLvJdrOSMo-toQ/dmKId-tFE6w.jpg?size=1280x720&quality=96&sign=064c91d0cdc37c6ded0b9a243e30f7f6&type=album", "https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album"],
         ultimateName: "РПГ",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-35.userapi.com/impg/IYDF9H8yCoVnwmt5oXAVn4TZF3JYWGMstzFpIw/JO5B9M5nrCw.jpg?size=932x656&quality=96&sign=e406c52667d638015e7efa04cb7d175c&type=album",
         actor: "РПГ",
         voiceActor: "Нету"
     }, {
@@ -37,7 +37,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun11-2.userapi.com/impg/9kr5__brMInosuL0hefafMYZyDcoZvD-hsF-5g/js8dT2bAqdA.jpg?size=1280x720&quality=96&sign=7b331a1a0297411bded2d30d5815c9ee&type=album","https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album", "https://sun9-79.userapi.com/impg/uw6MLgPOkQMhrI11Y8tXHy_9DoVdBmIF4Upxcg/4vHKwessfGE.jpg?size=1280x720&quality=96&sign=c34420abb446f7d31147b7ff2deb8280&type=album", "https://sun9-29.userapi.com/impg/W-7RU8qbi4YBa6xa8ax-wotwux7agEuul6l03A/ad9i0a8DjNo.jpg?size=1920x1080&quality=96&sign=dcb0ee516045b31137173f0a6be4a9fc&type=album", "https://sun9-44.userapi.com/impg/w4dXYAeFqGFGDOiOIMyKe5yXsg2XlLX6IGos2A/LFjzlHLVSbM.jpg?size=1920x1080&quality=96&sign=63da867c68e7de1cc5987c45c0207174&type=album", "https://sun9-53.userapi.com/impg/fQ0r9T2u0HATcmqnaMselGhOxadznLEfAPvcqw/zDgTQViCnTA.jpg?size=1920x1080&quality=96&sign=13462b995e45ead0e72af31d01568353&type=album", "https://sun9-12.userapi.com/impg/u7-Kf5mRvfl3OqXkeA7yfkyTt1pAGopL6CjDmQ/Paa2d3wB3G0.jpg?size=1920x1080&quality=96&sign=7b2632c7777c3e519bdc8537ec54d508&type=album"],
         ultimateName: "ДИМОН",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-6.userapi.com/impg/yPYwV374gtKnNUSoob3ypOWZ1PJp53XUjLgW6g/6gfNODg1DOU.jpg?size=1863x848&quality=96&sign=c0390f910f2573f3c363951ff46a4c10&type=album",
         actor: "Димон",
         voiceActor: "Димон"
     },
@@ -51,7 +51,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 16",
         awards: ["https://sun9-79.userapi.com/impg/PJitlBFhHqnCTdSaKd3-6rM1b7pMyfMrx9rHVg/B2yXVQzFtOE.jpg?size=1280x720&quality=96&sign=9c4aa41184c5868a6d30347ba822ea7e&type=album","https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album", "https://sun9-18.userapi.com/impg/LyWAIRSCZbgmYRtNtItppd6J5oA7Pw6g4wlcpQ/kBcEbVPsdgs.jpg?size=1920x1080&quality=96&sign=a606e84e68e02c0b13d453296c487e91&type=album", "https://sun9-69.userapi.com/impg/yTizKMl8QxXCA9yONjQbipDg8HCl4VFzhqG4cg/oNR2-2npRGk.jpg?size=1920x1080&quality=96&sign=5a160fb9d93eff85af535ebeeefaeb33&type=album", "https://sun9-54.userapi.com/impg/zy5boNpd_cFk-3fptM6gJCWJ6Qjvu6nRg-ABJA/8kr7tGDj6eo.jpg?size=1920x1080&quality=96&sign=5e6da5e6cfb4ee8a8328d00515b651da&type=album"],
         ultimateName: "Ловушка Исмолингса",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-21.userapi.com/impg/XluvoETXntcnoLd8IjA415chvq34367mzYghqw/DZGau16s4Y4.jpg?size=129x142&quality=96&sign=ab8bd768977414716cd9e7833947679c&type=album",
         actor: "Исмаил",
         voiceActor: "Даул"
     },
@@ -65,7 +65,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","https://sun9-17.userapi.com/impg/WHJngambpmCzb3nuP0amg4jo56JecovmuzcKng/ykxgbvAcPv8.jpg?size=1920x1080&quality=96&sign=02ea9f5cd80151fd6dca2c8643873fed&type=album", "https://sun9-18.userapi.com/impg/i5mCbhVl0oWbFtc2NseXFr5pidoOt1F7HVLOQw/wMiKrCf3FOo.jpg?size=1920x1080&quality=96&sign=4aceea03f37b38f9941d1e732d8a21e5&type=album", "https://sun9-67.userapi.com/impg/USxJlapVPT_rEl_1z0mFtTU3T03mAz1Pmcxw9g/FUm_rzQr-ts.jpg?size=1920x1080&quality=96&sign=807acaee11ed406270826c3c11be2806&type=album", "https://sun9-59.userapi.com/impg/4uhTl8-SflV1_ggf0_5Pd8Ka5Gjx_TWjW4oiyQ/-GgRuqok6iw.jpg?size=1920x1080&quality=96&sign=3bff479a182d81ebd2b6b8400b925dd6&type=album", "https://sun9-59.userapi.com/impg/4uhTl8-SflV1_ggf0_5Pd8Ka5Gjx_TWjW4oiyQ/-GgRuqok6iw.jpg?size=1920x1080&quality=96&sign=3bff479a182d81ebd2b6b8400b925dd6&type=album", "https://sun9-12.userapi.com/impg/uIG46ZLRGYjVA6C6A5uq5UdyeFU9vU9iaOOf6A/SZpJaVLXgAI.jpg?size=1920x1080&quality=96&sign=38462594196f2ee975173b3fbb9a510d&type=album"],
         ultimateName: "Удар Белорусса",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-1.userapi.com/impg/rBArrklZVSSaIEITy3tixFlUgR8zpsMe5agcUw/ytbFw152Pfk.jpg?size=955x580&quality=96&sign=87d93c9bde0f9e71708f584d9e61f7f8&type=album",
         actor: "Родик",
         voiceActor: "Родик"
     },{
@@ -78,7 +78,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","https://sun9-27.userapi.com/impg/ZQWrepVuig0avBVEqkDU3HZx1e30mqX_H-1Q-g/lzirTmCaSvk.jpg?size=1920x1080&quality=96&sign=0344148f5223a0ff25f28c480b3f3d75&type=album", "https://sun9-80.userapi.com/impg/iEmprQ8YOUq05R3bcSqYyewr2NRcPCTU1YfVvg/goa5R9eGZNQ.jpg?size=1920x1080&quality=96&sign=ac519732e349defcbd23db62b5be7fa1&type=album", "https://sun9-45.userapi.com/impg/85EV8KZPc7NR1lxb-6MUNIdNupncodTRbbM05w/a14rFOMJRBU.jpg?size=1920x1080&quality=96&sign=b50b0bbc5055cac316294b8cda637646&type=album", "https://sun9-54.userapi.com/impg/zy5boNpd_cFk-3fptM6gJCWJ6Qjvu6nRg-ABJA/8kr7tGDj6eo.jpg?size=1920x1080&quality=96&sign=5e6da5e6cfb4ee8a8328d00515b651da&type=album", "https://sun9-65.userapi.com/impg/mSLh_wBXXd9c0pw2Ymi_62_fmW857PB76NndFg/n3JkSOdqr6A.jpg?size=1920x1080&quality=96&sign=de08c624e484c7498384ae609f77bc5f&type=album", "https://sun9-38.userapi.com/impg/Eh2YCDUg3Rrpexc_fbR_sTx_acdA9DGUYvg-GQ/KV5Gon0NchI.jpg?size=1920x1080&quality=96&sign=f8981699f8a3817dc8ec86f6413f10bf&type=album", "https://sun9-72.userapi.com/impg/IpVjZhRMmskOYqUxvCRtbQUV-NOMMitG2uYHTw/kj126psw2N4.jpg?size=1920x1080&quality=96&sign=2bd54722a08d27027ccac61104304a6c&type=album"],
         ultimateName: "Гачи босс Конор",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-55.userapi.com/impg/tHLkrn6s-a6_juJIMlQgpHabgODMBZ5tnE_qrA/LQpiXw2w_Y4.jpg?size=590x563&quality=96&sign=03528778384fffff27771e44e5153cd8&type=album",
         actor: "Рауф",
         voiceActor: "Рауф"
     },{
@@ -90,12 +90,25 @@ export const heroes:IHeroes[] = [
         firstappearance: "Дамирсынба 3",
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","https://sun9-14.userapi.com/impg/pdJ9I-OOAgMwiI0kYPTokG51t4ffIiRrKe_pHw/xWNizVd2f6k.jpg?size=1920x1080&quality=96&sign=549dadad4d78217426c0fbea737e387d&type=album", "https://sun9-4.userapi.com/impg/TKguj4GtYCXms9_rGiHwlFeZjzeDGt2VuAjQkg/93w-MC7KJv4.jpg?size=1920x1080&quality=96&sign=f158fade0ad28ffce9af5e3831e0f5e4&type=album", "https://sun9-3.userapi.com/impg/2HTE7nSbiz5-vSU8V-noWtvK9bb5s17CTpA86w/kcVovdMc58o.jpg?size=1920x1080&quality=96&sign=e719edda468e2ff8a5351f3b876c7320&type=album", "https://sun9-21.userapi.com/impg/O0x5Rj1znQ-SxKXnp3-L_EvYM5YZ6jvp1sZtYA/xgQ938EXwkM.jpg?size=1920x1080&quality=96&sign=07208638b6ff809ea69d36a64e3d01a5&type=album","https://sun9-34.userapi.com/impg/EbyLI6m8rzkgMQ2VeAUXwgkg75Zo8ESzohvHWA/59LOukRrc4c.jpg?size=1920x1080&quality=96&sign=5c39869f0fedc5325103b1a6afc475d5&type=album"],
-        ultimateName: "Шизойдный удар",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateName: "Мудрость шизиков",
+        ultimateUrl: "https://sun9-73.userapi.com/impg/i3m9vSPa3jfugeCShRuzTPVEBlgUwZxTr-BdSQ/0U0CzJaBbT4.jpg?size=1274x624&quality=96&sign=f2649f1a8b4e6ccb29f53a04afc3fd37&type=album",
         actor: "Нурдаулет",
         voiceActor: "Нурдаулет"
-    }, {
+    },{
         id: 8,
+        name: "Саня",
+        photo: "/sanya.jpg",
+        podzagolovok: "Корейский убийца",
+        description: "Лучший убийца наемник, рабротает на правительство Кореи",
+        firstappearance: "СаняСынба 1",
+        lastappearance: "СаняСынба 1",
+        awards: ["https://sun11-1.userapi.com/impg/DAi9dzUK3WxzOf93taDAZWgk8YS5k9F9QLa3mg/CyMRbNBtySE.jpg?size=1280x720&quality=96&sign=8d6960d05cbaa914d5bee35f186aa6f8&type=album","https://sun9-75.userapi.com/impg/44RTCaYBhSN03Hb1io56zqkSzrdQ63as_06GvQ/DWmWiSQuz-w.jpg?size=1280x720&quality=96&sign=a4be2e93771103069493f8f3e836bd03&type=album"],
+        ultimateName: "пока нету",
+        ultimateUrl: "/placeholder-image.png",
+        actor: "Саня",
+        voiceActor: "Димон"
+    }, {
+        id: 9,
         name: "Стул",
         photo: "/stul.png",
         podzagolovok: "Лучший режиссер и сценарист",
@@ -108,11 +121,11 @@ export const heroes:IHeroes[] = [
         actor: "Стул",
         voiceActor: "Нету"
     },{
-        id: 9,
+        id: 10,
         name: "8 и 7 часть",
         photo: "/placeholder-image.png",
         podzagolovok: "Лучшие части дамирсынба",
-        description: "Лучшие части дамирсынба по мнению нарола",
+        description: "Лучшие части дамирсынба по мнению народа",
         firstappearance: "Дамирсынба 7",
         lastappearance: "Дамирсынба 8",
         awards: ["https://sun9-39.userapi.com/impg/odcZxsiLxHHF4yaPP1XolQzwTdRwO3idjQlukg/o6cSnvR93dM.jpg?size=1280x720&quality=96&sign=77169fcd4bd61a3cb23f6346dd352378&type=album","https://sun9-55.userapi.com/impg/ZzRVI0EZls8pgW_ZmLufkcbMbYrDGho366WvjA/P7XxiDxirWg.jpg?size=1280x720&quality=96&sign=1948b1e12e86e94373f15b7f7e9768c1&type=album"],
@@ -121,7 +134,7 @@ export const heroes:IHeroes[] = [
         actor: "Дамирсынба 7",
         voiceActor: "Дамирсынба 8"
     },{
-        id: 10,
+        id: 11,
         name: "Руслан",
         photo: "/ruslan.png",
         podzagolovok: "Закадровый герой",
@@ -134,7 +147,7 @@ export const heroes:IHeroes[] = [
         actor: "Руслан",
         voiceActor: "Руслан"
     },{
-        id: 11,
+        id: 12,
         name: "Рауан",
         photo: "/rauan.jpeg",
         podzagolovok: "Легенда",
@@ -143,12 +156,12 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["https://sun9-69.userapi.com/impg/QAYBu_9Ou-1DYWzxYPxbd-pjjVIzxc9p7g-ymw/yyOnmglgDiE.jpg?size=1280x720&quality=96&sign=c7e27dce9a5976c4eea627019aab65a6&type=album","/placeholder-image.png"],
         ultimateName: "Революция",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-42.userapi.com/impg/WbO6H4DklaktbK523TLk9Rx2GOLcHQmBvTMUyQ/YfTzYq5Zg_s.jpg?size=948x581&quality=96&sign=d88fe1efdad33baff1232a874128e6da&type=album",
         actor: "Рауан",
         voiceActor: "Руслан, Димон, Гугл"
     },
     {
-        id: 12,
+        id: 13,
         name: "Мудрец",
         photo: "/mudrec.jpg",
         podzagolovok: "Лучший мудрец",
@@ -157,11 +170,11 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 16",
         awards: ["/placeholder-image.png","/placeholder-image.png"],
         ultimateName: "Мудрость",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "/mudrec.jpg",
         actor: "Ашимов",
         voiceActor: "Даул"
     },{
-        id: 13,
+        id: 14,
         name: "Ютуб",
         photo: "/placeholder-image.png",
         podzagolovok: "Лучшая плотформа",
@@ -174,7 +187,7 @@ export const heroes:IHeroes[] = [
         actor: "Ютуб",
         voiceActor: "Ютуб"
     },{
-        id: 14,
+        id: 15,
         name: "Терминатор сериии Дамир",
         photo: "/damirterminator.png",
         podzagolovok: "Легендарный терминатор",
@@ -182,12 +195,12 @@ export const heroes:IHeroes[] = [
         firstappearance: "Дамирсынба 7",
         lastappearance: "Дамирсынба 16",
         awards: ["https://sun9-63.userapi.com/impg/tGUaG3k67fKCJ1CAv6QjUCDbER58mdp4ugNZKQ/xzCPBSyAN1I.jpg?size=1920x1080&quality=96&sign=acbcb1380e6abf957f981152636a3890&type=album"],
-        ultimateName: "Взрыв",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateName: "Железный удар провосудия",
+        ultimateUrl: "https://sun9-55.userapi.com/impg/DBkfmkAdCIx-QsWHnHTDby5PnItQS-KkxnPrhQ/E_aGEw06d9w.jpg?size=266x433&quality=96&sign=dd69dcbfd80743827e42b7d38780580d&type=album",
         actor: "Дамир",
         voiceActor: "Дамир"
     },{
-        id: 15,
+        id: 16,
         name: "Терминатор",
         photo: "/damirterminator.png",
         podzagolovok: "Оригинальный терминатор",
@@ -195,13 +208,13 @@ export const heroes:IHeroes[] = [
         firstappearance: "Дамирсынба 2",
         lastappearance: "Дамирсынба 13",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","/placeholder-image.png"],
-        ultimateName: "Железный удар провосудия",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateName: "Взрыв",
+        ultimateUrl: "https://sun9-65.userapi.com/impg/YUbi9lSVfeEmvRtkjUQlU_V1_xatw7wh5Wy09g/ZZTP0mZFG58.jpg?size=945x597&quality=96&sign=00a758d123421ab3f93d9de0d0a7ae1c&type=album",
         actor: "Рауф",
         voiceActor: "Рауф"
     },
     {
-        id: 16,
+        id: 17,
         name: "Челик в капюшоне",
         photo: "/chel.jfif",
         podzagolovok: "Не известный",
@@ -209,12 +222,12 @@ export const heroes:IHeroes[] = [
         firstappearance: "Дамирсынба 10",
         lastappearance: "Дамирсынба 13",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","/placeholder-image.png"],
-        ultimateName: "Железный удар провосудия",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateName: "Мудрость шизика",
+        ultimateUrl: "https://sun9-73.userapi.com/impg/i3m9vSPa3jfugeCShRuzTPVEBlgUwZxTr-BdSQ/0U0CzJaBbT4.jpg?size=1274x624&quality=96&sign=f2649f1a8b4e6ccb29f53a04afc3fd37&type=album",
         actor: "Нурдаулет",
         voiceActor: "Нурдаулет"
     }, {
-        id: 17,
+        id: 18,
         name: "Мадияр",
         photo: "/madiyar.png",
         podzagolovok: "Бильщик телефонов",
@@ -223,11 +236,11 @@ export const heroes:IHeroes[] = [
         lastappearance: "Спин-ОФФ Дворец для Дамирки",
         awards: ["/placeholder-image.png","/placeholder-image.png"],
         ultimateName: "Удар по телефону",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-58.userapi.com/impg/IpVu4iUeU5hFNdS7LRhCyN8OvR7epNjiMSsgCQ/1O-eAEnv0xM.jpg?size=712x391&quality=96&sign=1efcdf0169f3e3424669954847f411e8&type=album",
         actor: "Путин",
         voiceActor: "Гугл"
     },{
-        id: 18,
+        id: 19,
         name: "Роналдо",
         photo: "/ronaldo.jpg",
         podzagolovok: "Маг пехоти",
@@ -236,12 +249,12 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 11",
         awards: ["https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album","/placeholder-image.png"],
         ultimateName: "СУУУУ",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-54.userapi.com/impg/B5JGwC9qzoHaLZdnoYAGNnaS37D9MNkrwQYlqQ/yTy7ZYIpkGM.jpg?size=1280x720&quality=96&sign=0c7b7e55e333d46e9ab4b946483f9027&type=album",
         actor: "Роналдо",
         voiceActor: "Даул"
     },
     {
-        id: 19,
+        id: 20,
         name: "Питлер",
         photo: "",
         podzagolovok: "Захватчик",
@@ -250,7 +263,7 @@ export const heroes:IHeroes[] = [
         lastappearance: "Дамирсынба 18",
         awards: ["","/placeholder-image.png"],
         ultimateName: "Блицкриг жопы",
-        ultimateUrl: "/placeholder-image.png",
+        ultimateUrl: "https://sun9-33.userapi.com/impg/xC-2vWZ1KEH1P9u20NolYJs1b5iuKV2yYdAcMQ/YGALSaqdoRw.jpg?size=584x263&quality=96&sign=468291e48b163aa220b0a66d477c0825&type=album",
         actor: "Адольф",
         voiceActor: "Димон"
     },

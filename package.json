@@ -28,9 +28,6 @@
     "reactstrap": "^9.1.10",
     "sass": "^1.62.1",
     "tailwindcss": "^1.9.6",
-    "typescript": "5.0.4",
-    "@fortawesome/fontawesome-svg-core": "1.2.35",
-    "@fortawesome/free-solid-svg-icons": "5.15.3",
-    "@fortawesome/react-fontawesome": "0.1.14"
+    "typescript": "5.0.4"
   }
 }

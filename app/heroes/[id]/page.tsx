@@ -1,21 +1,16 @@
 "use client"
-
 import classes from "./heroes.module.scss";
 import NextImage from "next/image";
-
 import {useState} from "react";
-
 import Nagradi from "./Nagradi";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-
-import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 import {faB} from "@fortawesome/free-solid-svg-icons/faB";
 import {faP} from "@fortawesome/free-solid-svg-icons/faP";
 import {faA} from "@fortawesome/free-solid-svg-icons/faA";
-import {faAward} from "@fortawesome/free-solid-svg-icons/faAward";
+import {faAward} from "@fortawesome/free-solid-svg-icons";
 import {heroes} from "@/app/heroes/[id]/heroes";
 import Eror from "@/components/eror";
+import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
 const Page = ({params}) => {
     const [info, setInfo] = useState(1);
@@ -189,7 +184,7 @@ const Page = ({params}) => {
                         <p className={classes.ultimate}>
                             {data.ultimateName}
                         </p>
-                        <NextImage src = {data.ultimateUrl} alt={'ultimate'} width={200} height={200}/>
+                        <NextImage src = {data.ultimateUrl} alt={'ultimate'} width={200} height={200} className={classes.ultimate}/>
 
 
 
