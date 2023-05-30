@@ -12,10 +12,12 @@ import {heroes} from "@/app/heroes/[id]/heroes";
 import Eror from "@/components/eror";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
+let data:IHeroes;
+let erorCount:number = 0;
 const Page = ({params} : {params: {id:number}}) => {
     const [info, setInfo] = useState(1);
-    let data:IHeroes;
-    let erorCount:number = 0;
+
+
     for(let i = 0; i < heroes.length; i++){
         if(heroes[i].id == params.id) {
             data = heroes[i]
