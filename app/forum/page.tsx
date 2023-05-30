@@ -7,8 +7,8 @@ import "firebase/auth";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {useCollectionData} from "react-firebase-hooks/firestore"
 import {useState} from "react";
-import {q} from "@firebase/firestore/dist/memory/esm5/packages/firestore/dist/memory/esm2017/prebuilt-a55a34ea";
 import "./forum.scss"
+
 if (!firebase.apps.length) {
     firebase.initializeApp({
         apiKey: "AIzaSyC3XTkJGHuG4ZY3O3_moK3TNYLzpbGZH4Q",
@@ -51,13 +51,10 @@ export default  function Page  ()  {
 function SignIn() {
     const signInWithGoogle = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
-        auth.signInWithPopup(provider).then((result) => {
-        }).catch((error) => {
+        auth.signInWithPopup(provider).then(() => {
+        }).catch(() => {
 
-            let errorCode = error.code;
-            let errorMessage = error.message;
-            let email = error.email;
-            let credential = error.credential;
+
         });
     }
     return <button onClick={signInWithGoogle} className="text-black font-bold py-2 px-4 border-b-4  rounded" > Войти с помощью гугл акаунта</button>

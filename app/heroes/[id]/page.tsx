@@ -12,25 +12,11 @@ import {heroes} from "@/app/heroes/[id]/heroes";
 import Eror from "@/components/eror";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
-let data:IHeroes =  {
-    id: 1,
-    name: "Дамирсынба",
-    photo: "/damirsinba.png",
-    podzagolovok: "Гачи бос",
-    description: "Он был обычным мальчиком, пока ему не написал Суслан Рапаргалиев, он снимается в фильме,\n" +
-        "                            зазвиждается и мудрец превращает его в шампунь ....",
-    firstappearance: "Дамирсынба 1",
-    lastappearance: "Дамирсынба 18",
-    awards: ["https://sun9-68.userapi.com/impg/iMzhIG4M9WNeI-1wVwrbvQm54G60hytJSxgE-w/XyA7k7rjcGM.jpg?size=1920x1080&quality=96&sign=23a5fce9bd74fdf6a9a7cf9e9fb37818&type=album","https://sun9-77.userapi.com/impg/QbZifoI9Fe_2ULjHIecaAe2eVFZ0vXzMPexMXQ/JJUXMjSsXMY.jpg?size=1920x1080&quality=96&sign=af572b7805637855f37ff5c13317e3d7&type=album", "https://sun9-69.userapi.com/impg/PEIMwZQRzenqMTcg8mCTqjK0KfG7ai8qoIoyyw/AZF6frO-cVc.jpg?size=1920x1080&quality=96&sign=9ed6bc3844678adb74135ca6279a24b1&type=album", "https://sun9-32.userapi.com/impg/O3gslyHnVbqejoen-1fH37XMUU_ZH8Gh7xAJSA/WrLJXJ51QsY.jpg?size=1280x720&quality=96&sign=5ac30f928d8c734606fe9d07606af964&type=album", "https://sun9-14.userapi.com/impg/pdJ9I-OOAgMwiI0kYPTokG51t4ffIiRrKe_pHw/xWNizVd2f6k.jpg?size=1920x1080&quality=96&sign=549dadad4d78217426c0fbea737e387d&type=album"],
-    ultimateName: "Гачи бос",
-    ultimateUrl: "https://sun9-43.userapi.com/impg/tuoWrP9u__fkT3vvldTyTC4kQpVMR1Yuv2WqoA/kBxGCPbxSLw.jpg?size=636x372&quality=96&sign=08ef1b470f55dad66bc2ebe13a946eed&type=album",
-    actor: "Дамир",
-    voiceActor: "Дамир"
-}
-let erorCount:number = 0;
+
 const Page = ({params} : {params: {id:number}}) => {
     const [info, setInfo] = useState(1);
-
+    let data:IHeroes;
+    let erorCount:number = 0;
 
     for(let i = 0; i < heroes.length; i++){
         if(heroes[i].id == params.id) {
