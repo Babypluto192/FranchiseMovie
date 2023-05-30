@@ -12,7 +12,7 @@ import {heroes} from "@/app/heroes/[id]/heroes";
 import Eror from "@/components/eror";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
-const Page = ({params}) => {
+const Page = ({params} : {params: {id:number}}) => {
     const [info, setInfo] = useState(1);
 
     function Handleclick(value: number) {
