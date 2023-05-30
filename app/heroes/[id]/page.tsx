@@ -23,12 +23,13 @@ const Page = ({params} : {params: {id:number}}) => {
             erorCount++;
         }
     }
+    const [info, setInfo] = useState(1);
 
     if(erorCount === heroes.length) {
         // @ts-ignore
         return (<Eror> </Eror>)
     }
-    const [info, setInfo] = useState(1);
+
 
     function Handleclick(value: number) {
         setInfo(value)
