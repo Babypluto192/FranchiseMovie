@@ -1,4 +1,4 @@
-"use client"
+"use client"; // This is a client component
 import classes from "./heroes.module.scss";
 import NextImage from "next/image";
 import {useState} from "react";
