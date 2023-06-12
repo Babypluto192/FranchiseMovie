@@ -1,6 +1,5 @@
 import classes from "./style/movie.module.scss"
 import NextImage from 'next/image';
-import Link from "next/link";
 
 interface Imovie {
     id: number
@@ -24,9 +23,9 @@ const Movie = (props:Imovie) => {
                Рейтинг фильма  {props.rating} из 10
             </p>
 
-           <Link className="btn btn-secondary" href={`/player/${props.id}`}>
-                Смотреть
-            </Link>
+           {/*<Link className="btn btn-secondary" href={`/player/${props.id}`}>*/}
+           {/*     Смотреть*/}
+           {/* </Link>*/}
 
 
         </div>
