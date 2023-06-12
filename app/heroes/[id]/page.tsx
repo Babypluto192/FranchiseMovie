@@ -43,8 +43,8 @@ const Page = ({params} : {params: {id:number}}) => {
 
 
     if(erorCount === heroes.length) {
-        // @ts-ignore
-        return (<Eror> </Eror>)
+
+        return (<Eror/>)
     }
 
 
