@@ -42,7 +42,7 @@ export default function Osnovniye ()  {
             {isLoading ? <Loader/>  : <></> }
 
             {data.map(el =>
-                <div key ={el.id} className={classes.container}>
+                <div key ={el['id']} className={classes.container}>
                   <Movie id={el.id} title={el.title}  rating={el.rating} url={el.url} preview={el.preview} />
                 </div>
             )}
