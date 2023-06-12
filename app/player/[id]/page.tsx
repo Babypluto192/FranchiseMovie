@@ -29,7 +29,7 @@ const Page = ({params} : {params: {id:number}}) => {
     let erorCount:number = 0;
     let url:any[]
     for(let i = 0; i < data.length; i++){
-        if(data[i].id == params.id) {
+        if(data[i]['id'] == params.id) {
             url = data[i]
             break;
         } else {
