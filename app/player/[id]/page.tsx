@@ -7,7 +7,6 @@ const Page = ({params} : {params: {id:number}}) => {
     const [data, setData] = useState([]);
     const getdata = async ()=>  {
         try {
-
             const response = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
             const json = await response.json()
             setData(json)
