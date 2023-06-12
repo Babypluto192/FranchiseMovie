@@ -39,7 +39,7 @@ export default function Osnovniye ()  {
 
             <h1 className={classes.h1}>Это Основные части Дамирсынба</h1>
 
-            {isLoading ? <Loader> </Loader> : <></> }
+            {isLoading ? <Loader/>  : <></> }
 
             {data.map(el =>
                 <div key ={el.id} className={classes.container}>

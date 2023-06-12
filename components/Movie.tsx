@@ -29,6 +29,7 @@ const Movie = (props:Imovie) => {
             </Link>
 
 
+
         </div>
     );
 };

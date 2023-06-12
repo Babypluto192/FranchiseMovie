@@ -5,7 +5,6 @@ const Loader = () => {
     return (
         <div>
             <Loading className='loader'>
-
             </Loading>
         </div>
     );
