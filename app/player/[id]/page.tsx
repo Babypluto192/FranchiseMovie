@@ -22,12 +22,12 @@ const Page = ({params} : {params: {id:number}}) => {
 
 
     useEffect(() => {
-        getdata().then(function(data){
+        getdata().then(function(){
         })
     }, []);
 
     let erorCount:number = 0;
-    let url = []
+    let url:any[]
     for(let i = 0; i < data.length; i++){
         if(data[i].id == params.id) {
             url = data[i]
@@ -48,8 +48,8 @@ const Page = ({params} : {params: {id:number}}) => {
     return (
         <>
 
-            <iframe width="100%" height="800" src={url.url}
-                    title="YouTube video player" frameBorder="0"
+            <iframe width="100%" height="800" src={url['url']}
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen></iframe>
         </>
