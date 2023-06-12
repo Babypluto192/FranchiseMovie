@@ -14,7 +14,7 @@ export default function Osnovniye ()  {
     const getdata = async ()=>  {
         try {
             setLoading(true)
-            const response = await fetch('http://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
+            const response = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
             const json = await response.json()
             setData(json)
 
