@@ -43,7 +43,7 @@ export default function Osnovniye ()  {
 
             {data.map(el =>
                 <div key ={el.id} className={classes.container}>
-                  <Movie id={el.id} title={el.title} url={el.url} rating={el.rating} preview={el.preview} />
+                  <Movie id={el.id} title={el.title}  rating={el.rating} url={el.url} preview={el.preview} />
                 </div>
             )}
             {/*<audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>*/}
