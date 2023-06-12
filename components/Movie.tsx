@@ -1,6 +1,6 @@
-import {Container} from "reactstrap";
 import classes from "./style/movie.module.scss"
 import NextImage from 'next/image';
+import Link from "next/link";
 
 interface Imovie {
     id: number
@@ -13,7 +13,7 @@ interface Imovie {
 
 const Movie = (props:Imovie) => {
     return (
-        <Container key={props.id}>
+        <div  className={classes.container} key={props.id}>
             <NextImage src={props.preview} alt={props.title} width={400}  height={400} className={classes.img}>
 
             </NextImage>
@@ -21,10 +21,15 @@ const Movie = (props:Imovie) => {
                 {props.title}
             </p>
             <p>
-                {props.rating}
+               Рейтинг фильма  {props.rating} из 10
             </p>
 
-        </Container>
+           <Link className="btn btn-secondary" href={`/player/${props.id}`}>
+                Смотреть
+            </Link>
+
+
+        </div>
     );
 };
 

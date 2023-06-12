@@ -4,9 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import Link from "next/link";
 import classes from "./style/header.module.scss";
+import {useTheme as useNextTheme} from 'next-themes'
+import {Switch, useTheme} from '@nextui-org/react'
 
 
 export default function Header () {
+    const { setTheme } = useNextTheme();
+    const { isDark, type } = useTheme();
     return (
         <div>
         <Navbar bg="light" expand="lg">
@@ -24,7 +28,7 @@ export default function Header () {
                         <Link className="nav-link active" href={"/lore"}>Лор </Link>
                         <NavDropdown title="Части" id="basic-nav-dropdown">
 
-                                {/*<Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link> }*/}
+                                <Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link>
 
                             <Link href={'/spinOff'} className="dropdown-item" >  Спин-Оффы</Link>
 
@@ -36,7 +40,13 @@ export default function Header () {
                         </NavDropdown>
                         <Link className="nav-link active" href={"/rating"} >Рейтинг</Link>
                         <Link className="nav-link active" href={"/forum"} >Форум (тестовая функция)</Link>
+                        <Link className="nav-link active" href={"/"}> Текущая тема {type}</Link>
+                        <Switch
+                            checked={isDark}
+                            onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+                        />
                     </Nav>
+
                 </Navbar.Collapse>
 
         </Navbar>

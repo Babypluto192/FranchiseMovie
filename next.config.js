@@ -28,7 +28,12 @@ module.exports = {
                 hostname: "sun**-**.userapi.com",
                 port: "",
                 pathname: "**",
-            },
+            },{
+            protocol: "https",
+            hostname: "youtu.be",
+            port: ""    ,
+            pathname: "**********"
+            }
 
         ],
     },

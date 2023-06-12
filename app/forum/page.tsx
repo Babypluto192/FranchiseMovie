@@ -130,7 +130,7 @@ function ChatMessage(props:any) {
 
             <Image src={image} alt ="Profile picture" width={40} height={40} className={classes.img}>
             </Image>
-            <p className={classes.p}>{text}</p>
+            <p className={classes.p}> {text}</p>
         </div>
     )
 }

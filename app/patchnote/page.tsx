@@ -29,7 +29,7 @@ export default  function patchnote ()   {
 
             </ul>
 
-            <ul> <h4> 3.0 ЛОР ЛОР ЛОР!</h4>
+            <ul className={classes.ul}> <h4> 3.0 ЛОР ЛОР ЛОР!</h4>
                 <li>
                     Улучшен лор Дамирсынба
                 </li>
@@ -47,7 +47,7 @@ export default  function patchnote ()   {
                 </li>
             </ul>
 
-            <ul> <h5> 4.0 РЕЙТИНГ ЗАКАЗЫВАЛИ ?</h5>
+            <ul className={classes.ul}> <h5> 4.0 РЕЙТИНГ ЗАКАЗЫВАЛИ ?</h5>
                 <li>
                     Улучшен рейтинг Дамирсынба
                 </li>
@@ -64,7 +64,7 @@ export default  function patchnote ()   {
                     И так же улучшен интерфейс
                 </li>
             </ul>
-            <ul> <h5> 5.0 СТРАНИЧКИ ГЕРОЕВ</h5>
+            <ul className={classes.ul}> <h5> 5.0 СТРАНИЧКИ ГЕРОЕВ</h5>
                 <li>
                     Добавлены странички героев
                 </li>
@@ -81,6 +81,7 @@ export default  function patchnote ()   {
                     И так же улучшен интерфейс
                 </li>
             </ul>
+
         </div>
         </div>
     );
