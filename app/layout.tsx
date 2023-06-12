@@ -25,10 +25,7 @@ const darkTheme = createTheme({
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Damirsinba site',
-  description: 'Damirsinba site',
-}
+
 
 export default function RootLayout({
                                      children,
