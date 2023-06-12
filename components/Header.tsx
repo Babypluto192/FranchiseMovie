@@ -1,18 +1,33 @@
-"use client"; // This is a client component
+"use client"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import Link from "next/link";
 import classes from "./style/header.module.scss";
 import {useTheme as useNextTheme} from 'next-themes'
-import {Switch, useTheme} from '@nextui-org/react'
-
+import {createTheme, Switch, useTheme} from '@nextui-org/react'
+import React from "react";
 
 export default function Header () {
+
+
+    const lightTheme = createTheme({
+        type: 'light',
+        theme: {
+            colors: {background: "white",},
+        }
+    })
+
+   const darkTheme = createTheme({
+        type: 'dark',
+        theme: {
+            colors: {background: "#212121", text: "white"},
+        }
+    })
     const { setTheme } = useNextTheme();
     const { isDark, type } = useTheme();
     return (
-        <div>
+
+
         <Navbar bg="light" expand="lg">
 
 
@@ -50,6 +65,8 @@ export default function Header () {
                 </Navbar.Collapse>
 
         </Navbar>
-        </div>
+
+
+
     );
 };
