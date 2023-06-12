@@ -202,7 +202,7 @@ export const heroes:IHeroes[] = [
     },{
         id: 16,
         name: "Терминатор",
-        photo: "/damirterminator.png",
+        photo: "/terminator.png",
         podzagolovok: "Оригинальный терминатор",
         description: "Оригинальный терминатор легенда",
         firstappearance: "Дамирсынба 2",
