@@ -41,9 +41,9 @@ export default function Osnovniye ()  {
 
             {isLoading ? <Loader/>  : <></> }
 
-            {data.map( (el,index) =>
-                <div key={el.id | index} className={classes.container}>
-                  <Movie id={el.id | index} title={el.title}  rating={el.rating} url={el.url} preview={el.preview} />
+            {data.map( (el) =>
+                <div key={el['id'] } className={classes.container}>
+                  <Movie id={el['id'] } title={el.title}  rating={el.rating} url={el.url} preview={el.preview} />
                 </div>
             )}
             {/*<audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>*/}
