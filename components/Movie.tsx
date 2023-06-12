@@ -12,7 +12,7 @@ interface Imovie {
 
 const Movie = (props:Imovie) => {
     return (
-        <div  className={classes.container} key={props.id}>
+        <div   key={props.id}>
             <NextImage src={props.preview} alt={props.title} width={400}  height={400} className={classes.img}>
 
             </NextImage>
@@ -23,9 +23,9 @@ const Movie = (props:Imovie) => {
                Рейтинг фильма  {props.rating} из 10
             </p>
 
-           {/*<Link className="btn btn-secondary" href={`/player/${props.id}`}>*/}
-           {/*     Смотреть*/}
-           {/* </Link>*/}
+           <Link className="btn btn-secondary" href={`/player/${props.id}`}>
+                Смотреть
+            </Link>
 
 
         </div>
