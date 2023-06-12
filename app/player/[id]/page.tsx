@@ -2,7 +2,10 @@
 import {useEffect, useState} from "react";
 import Eror from "@/components/eror";
 
-
+let url:Object = {
+    id: '1',
+    url: 'https://youtube.com/embed/6pHKd_2Gq0w'
+}
 const Page = ({params} : {params: {id:number}}) => {
     const [data, setData] = useState([]);
     const getdata = async ()=>  {
@@ -27,7 +30,7 @@ const Page = ({params} : {params: {id:number}}) => {
     }, []);
 
     let erorCount:number = 0;
-    let url:any[]
+
     for(let i = 0; i < data.length; i++){
         if(data[i]['id'] == params.id) {
             url = data[i]
