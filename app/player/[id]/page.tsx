@@ -2,7 +2,7 @@
 import {useEffect, useState} from "react";
 import Eror from "@/components/eror";
 
-let url:any[]
+let url:any
 const Page = ({params} : {params: {id:number}}) => {
     const [data, setData] = useState([]);
     const getdata = async ()=>  {
