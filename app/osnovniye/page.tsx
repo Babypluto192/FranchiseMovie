@@ -28,7 +28,7 @@ export default function Osnovniye ()  {
 
 
     useEffect(() => {
-        getdata().then(function(data){
+        getdata().then(function(){
             setLoading(false)
         })
     }, []);
