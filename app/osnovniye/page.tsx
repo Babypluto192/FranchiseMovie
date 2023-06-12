@@ -41,8 +41,8 @@ export default function Osnovniye ()  {
 
             {isLoading ? <Loader/>  : <></> }
 
-            {data.map(el =>
-                <div className={classes.container}>
+            {data.map( (el,index) =>
+                <div key={index} className={classes.container}>
                   <Movie id={el.id} title={el.title}  rating={el.rating} url={el.url} preview={el.preview} />
                 </div>
             )}
