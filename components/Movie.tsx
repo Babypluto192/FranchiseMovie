@@ -1,5 +1,6 @@
 import classes from "./style/movie.module.scss"
 import NextImage from 'next/image';
+import Link from "next/link";
 
 interface Imovie {
     id: number
