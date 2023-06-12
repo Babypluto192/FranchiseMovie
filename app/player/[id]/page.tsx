@@ -38,7 +38,7 @@ const Page = ({params} : {params: {id:number}}) => {
     }
 
     if(erorCount === data.length) {
-        return (<Eror> </Eror>)
+        return (<Eror/> )
     }
 
 
