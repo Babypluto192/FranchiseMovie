@@ -2,10 +2,7 @@
 import {useEffect, useState} from "react";
 import Eror from "@/components/eror";
 
-let url:Object = {
-    id: '1',
-    url: 'https://youtube.com/embed/6pHKd_2Gq0w'
-}
+let url:any[]
 const Page = ({params} : {params: {id:number}}) => {
     const [data, setData] = useState([]);
     const getdata = async ()=>  {
