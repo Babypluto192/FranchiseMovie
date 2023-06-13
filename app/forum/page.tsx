@@ -69,7 +69,7 @@ function SignOut() {
 }
 
 function ChatRoom() {
-    const dummy = useRef() useRef() as MutableRefObject<HTMLSpanElement>;
+    const dummy = useRef() as MutableRefObject<HTMLSpanElement>;
     const messagesRef = firestore.collection('messages')
 
     const query = messagesRef.orderBy('CreatedAt').limit(25);
