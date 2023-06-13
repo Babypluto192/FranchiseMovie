@@ -98,13 +98,15 @@ function ChatRoom() {
         });
 
         setFormValue('')
-        useEffect(() => {
-            if (dummy.current != null) {
-                dummy.current.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, []);
+
+
+        if(dummy.current != null) {
+            dummy.current.scrollIntoView({behavior: 'smooth'});
+        }
+
 
     }
+
 
 
     return(
