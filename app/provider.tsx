@@ -3,7 +3,11 @@
 
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 import {createTheme, NextUIProvider} from "@nextui-org/react"
+import {ReactElement, ReactNode} from "react";
 
+interface AuxProps {
+    children: ReactElement | ReactNode;
+}
 const lightTheme = createTheme({
     type: 'light',
     theme: {
@@ -17,7 +21,8 @@ const darkTheme = createTheme({
         colors: {background: '212121', color: 'white'},
     }
 })
-const Providers = ({children}) => {
+
+const Providers = ({children}: AuxProps) => {
     return (
         <NextThemesProvider
             defaultTheme="system"
@@ -28,6 +33,7 @@ const Providers = ({children}) => {
             }}
         >
             <NextUIProvider>
+
             {children}
             </NextUIProvider>
         </NextThemesProvider>
