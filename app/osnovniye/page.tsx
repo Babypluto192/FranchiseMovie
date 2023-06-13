@@ -35,7 +35,7 @@ export default function Osnovniye ()  {
 
 
     return (
-        <div >
+        <div>
 
             <h1 className={classes.h1}>Это Основные части Дамирсынба</h1>
 

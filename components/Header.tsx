@@ -3,32 +3,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 import Link from "next/link";
 import classes from "./style/header.module.scss";
-import {useTheme as useNextTheme} from 'next-themes'
-import {createTheme, Switch, useTheme} from '@nextui-org/react'
+
 import React from "react";
+import {useTheme as useNextTheme} from 'next-themes'
+import {Switch, useTheme} from '@nextui-org/react'
 
 export default function Header () {
+    // const {resolvedTheme, setTheme} = useTheme()
+    // const [mounted, setMounted] = useState(false)
+    // useEffect(() => {
+    //     setMounted(true)
+    // },[])
+    //
+    //
+    // if(!mounted) {
+    //     return null
+    // }
 
-
-    const lightTheme = createTheme({
-        type: 'light',
-        theme: {
-            colors: {background: "white",},
-        }
-    })
-
-   const darkTheme = createTheme({
-        type: 'dark',
-        theme: {
-            colors: {background: "#212121", text: "white"},
-        }
-    })
     const { setTheme } = useNextTheme();
     const { isDark, type } = useTheme();
+
     return (
 
 
-        <Navbar bg="light" expand="lg">
+        <Navbar className="bg-white" expand="lg">
 
 
                 <img
@@ -55,11 +53,17 @@ export default function Header () {
                         </NavDropdown>
                         <Link className="nav-link active" href={"/rating"} >Рейтинг</Link>
                         <Link className="nav-link active" href={"/forum"} >Форум (тестовая функция)</Link>
-                        <Link className="nav-link active" href={"/"}> Текущая тема {type}</Link>
+
+                       <a href={"/"} className="nav-link active"> Текущая тема - {type === 'dark' ? 'Темная' : 'Светлая'}
+                       </a>
+
+
                         <Switch
                             checked={isDark}
                             onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                         />
+
+
                     </Nav>
 
                 </Navbar.Collapse>

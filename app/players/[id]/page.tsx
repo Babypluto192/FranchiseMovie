@@ -27,7 +27,7 @@ const Page = ({params} : {params: {id:number}}) => {
 
     let erorCount:number = 0;
 
-    for(let i = 0; i < data.length; i++){
+    for(let i = 0; i < 20; i++){
         if(data[i]['id'] == params.id) {
             url = data[i]
             break;
@@ -40,7 +40,14 @@ const Page = ({params} : {params: {id:number}}) => {
         return (<Eror/> )
     }
 
+    if(params.id === 8 ||params.id === 9 || params.id === 10 ) {
+        return (<>
 
+            <iframe src="https://vk.com/video_ext.php?oid=-201718799&id=456239032&hash=83a11c63df5096f6&hd=2"
+                    width="100%" height="800" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                     allowFullScreen></iframe>
+        </> )
+    }
 
 
 
