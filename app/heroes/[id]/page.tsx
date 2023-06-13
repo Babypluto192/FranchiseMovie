@@ -9,7 +9,7 @@ import {faP} from "@fortawesome/free-solid-svg-icons/faP";
 import {faA} from "@fortawesome/free-solid-svg-icons/faA";
 import {faAward} from "@fortawesome/free-solid-svg-icons";
 import {heroes} from "@/app/heroes/[id]/heroes";
-import Eror from "@/components/eror";
+import Error from "@/components/Error";
 import {faU} from "@fortawesome/free-solid-svg-icons/faU";
 
 let data:IHeroes =  {
@@ -44,7 +44,7 @@ const Page = ({params} : {params: {id:number}}) => {
 
     if(erorCount === heroes.length) {
 
-        return (<Eror/>)
+        return (<Error/>)
     }
 
 

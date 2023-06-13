@@ -1,9 +1,11 @@
-import Eror from "@/components/eror"
+import Error from "@/components/Error";
+
+"@/components/eror"
 
 const Eror = () => {
     return (
         <div>
-            <Eror/>
+            <Error/>
         </div>
     );
 };

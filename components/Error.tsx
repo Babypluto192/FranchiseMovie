@@ -1,6 +1,6 @@
 
 
-const Eror = () => {
+const Error = () => {
     return (
         <div>
             <h1> EROR</h1>
@@ -8,4 +8,4 @@ const Eror = () => {
     );
 };
 
-export default Eror;
+export default Error;
