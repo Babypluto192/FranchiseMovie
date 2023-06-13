@@ -69,7 +69,8 @@ function SignOut() {
 }
 
 function ChatRoom() {
-    const dummy = useRef() as MutableRefObject<HTMLSpanElement>;
+    const dummy = useRef<HTMLSpanElement>(null);
+
     const messagesRef = firestore.collection('messages')
 
     const query = messagesRef.orderBy('CreatedAt').limit(25);
@@ -97,15 +98,20 @@ function ChatRoom() {
         });
 
         setFormValue('')
+        useEffect(() => {
+            if (dummy.current != null) {
+                dummy.current.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, []);
 
-        dummy.current.scrollIntoView({ behavior: 'smooth' });
     }
+
 
     return(
         <>
             <main className={classes.main}>
             {messages && messages.map(msg => <ChatMessage key={msg.id} message = {msg}/>)}
-                {/* @ts-ignore */}
+
                 <span ref={dummy}></span>
             </main>
 
