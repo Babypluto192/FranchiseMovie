@@ -28,7 +28,7 @@ const firestore = firebase.firestore();
 
 
 
-export default  function Page  ()  {
+export default  function Page  ( )  {
     const [user] = useAuthState(auth);
     const sectionClass = user ? classes.sectionchatroom : classes.sectionbutton
     return (
