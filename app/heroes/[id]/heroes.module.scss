@@ -4,7 +4,7 @@
   padding-right: 1.4vw;
   display: flex;
   flex-direction: column;
-  background-color: #1b0c2d;
+
   height: 100vh;
   width: 200vh;
 }
@@ -13,13 +13,13 @@
   padding-right: 1.4vw;
   display: flex;
   flex-direction: column;
-  background-color: #1b0c2d;
+
   height: 100%;
   width: 100%;
 }
-//
+
 .h1 {
-  color: white;
+
 
   margin-left: 4vw;
 }
@@ -34,26 +34,20 @@
 
 
 .description {
-  color: white;
+
   width: 25vw;
 
 
   margin: 4vw;
 
 }
-//
+
 .ultimate {
 
-  color: white;
+
   margin-left: 4vw;
 }
-//
-//
-//.ultimateContainer {
-//  position: relative;
-//  top: 20vh;
-//  margin-left: 4vw;
-//}
+
 .image{
   margin-left: auto;
   margin-right: auto;
@@ -67,16 +61,9 @@
 }
 
 .headerimages {
-  color: white;
+
   margin: 3px;
 }
-////
-////.heroesHeader {
-////  position: relative;
-////  top: 16vh;
-////  margin-left: 30vw;
-////
-////}
 
 
 @media screen  and (max-device-width: 1304px){
@@ -121,7 +108,7 @@
 @media screen  and (max-device-width: 612px){
 
   .h1 {
-    color: white;
+
 
     margin-left: 4vw;
 
@@ -157,7 +144,7 @@
     height: 30px;
   }
   .description {
-    color: white;
+
 
 
 

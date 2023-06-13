@@ -1,44 +1,34 @@
 "use client"
-import {useEffect, useState} from "react";
-import Eror from "@/components/eror";
+import Idata from "@/app/osnovniye/Idata";
 
 let url:any
-const Page = ({params} : {params: {id:number}}) => {
-    const [data, setData] = useState([]);
-    const getdata = async ()=>  {
-        try {
-            const response = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
-            const json = await response.json()
-            setData(json)
+export default async function Page ({params} : {params: {id:number}})  {
+    async function getData() {
+        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
 
-        } catch (e) {
-            console.log(e)
+
+
+        if (!res.ok) {
+
+            throw new Error('Failed to fetch data')
         }
 
+        return res.json()
     }
 
 
 
 
-    useEffect(() => {
-        getdata().then(function(){
-        })
-    }, []);
-
-    let erorCount:number = 0;
+    const data:Idata[] = await getData()
 
     for(let i = 0; i < data.length; i++){
         if(data[i]['id'] == params.id) {
             url = data[i]
             break;
-        } else {
-            erorCount++;
         }
     }
 
-    if(erorCount === data.length) {
-        return (<Eror/> )
-    }
+
 
 
 
@@ -55,5 +45,3 @@ const Page = ({params} : {params: {id:number}}) => {
 
     );
 };
-
-export default Page;

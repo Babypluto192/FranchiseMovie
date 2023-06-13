@@ -7,18 +7,10 @@ import classes from "./style/header.module.scss";
 import React from "react";
 import {useTheme as useNextTheme} from 'next-themes'
 import {Switch, useTheme} from '@nextui-org/react'
+import NextImage from "next/image";
 
 export default function Header () {
-    // const {resolvedTheme, setTheme} = useTheme()
-    // const [mounted, setMounted] = useState(false)
-    // useEffect(() => {
-    //     setMounted(true)
-    // },[])
-    //
-    //
-    // if(!mounted) {
-    //     return null
-    // }
+
 
     const { setTheme } = useNextTheme();
     const { isDark, type } = useTheme();
@@ -29,9 +21,10 @@ export default function Header () {
         <Navbar className="bg-white" expand="lg">
 
 
-                <img
+                <NextImage
                     src="/SYH4dAPuuZA__1_-removebg-preview.png"
-                    alt="" className={classes.img}/>
+                    alt="" className={classes.img} height="40"
+            width="70"/>
                 <Link href={'/'} className="navbar-brand"> Дамирсынба </Link>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -52,14 +45,15 @@ export default function Header () {
                             <Link href={'/fanati'} className="dropdown-item"> Фанатская дейтельность </Link>
                         </NavDropdown>
                         <Link className="nav-link active" href={"/rating"} >Рейтинг</Link>
-                        <Link className="nav-link active" href={"/forum"} >Форум (тестовая функция)</Link>
+                        <Link className="nav-link active" href={"/forum"} >Форум</Link>
 
                        <a href={"/"} className="nav-link active"> Текущая тема - {type === 'dark' ? 'Темная' : 'Светлая'}
                        </a>
 
 
                         <Switch
-                            checked={isDark}
+
+                            checked={isDark === true}
                             onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                         />
 

@@ -7,7 +7,7 @@ export default  function rating ()   {
         <div>
 
             <h1 className={classes.h1}>Это Рейтинг</h1>
-            {/*<audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>*/}
+            <audio src="/rating.mp3" autoPlay className={classes.audio} ></audio>
 
             <table className={classes.table}>
                 <tbody>

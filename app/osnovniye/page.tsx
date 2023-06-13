@@ -1,52 +1,48 @@
-"use client"
-
 import classes from "./osnovniye.module.scss";
-import {useEffect, useState} from "react";
 import Movie from "../../components/Movie"
-import Loader from "@/components/Loader";
+import Idata from "@/app/osnovniye/Idata";
 
 
-export default function Osnovniye ()  {
-    const [data, setData] = useState([]);
-    const [isLoading, setLoading] = useState(false)
+export default async function Osnovniye ()  {
+
+    async function getData() {
+        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
 
 
-    const getdata = async ()=>  {
-        try {
-            setLoading(true)
-            const response = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
-            const json = await response.json()
-            setData(json)
 
-        } catch (e) {
-            console.log(e)
+        if (!res.ok) {
+
+            throw new Error('Failed to fetch data')
         }
 
+        return res.json()
     }
 
 
 
 
-    useEffect(() => {
-        getdata().then(function(){
-            setLoading(false)
-        })
-    }, []);
-
+    const data:Idata[] = await getData()
 
     return (
         <div>
 
             <h1 className={classes.h1}>Это Основные части Дамирсынба</h1>
 
-            {isLoading ? <Loader/>  : <></> }
 
-            {data.map( (el) =>
-                <div key={el['id'] } className={classes.container}>
-                  <Movie id={el['id'] } title={el['title']}  rating={el['rating']} url={el['url']} preview={el['preview']} />
-                </div>
+
+            {data.map( (el,index) => {
+                    if (index < 20) {
+                        return (
+                        <div key={el['id']} className={classes.container}>
+                            <Movie id={el['id']} title={el['title']} rating={el['rating']} url={el['url']}
+                                   preview={el['preview']}/>
+                        </div>
+                        )
+                    }
+                }
+
             )}
-            {/*<audio src="/jhoncena.mp3" autoPlay className={classes.audio} ></audio>*/}
+            <audio src="/osnovniye.mp3" autoPlay className={classes.audio} ></audio>
         </div>
     );
 };

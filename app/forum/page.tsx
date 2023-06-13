@@ -6,7 +6,7 @@ import "firebase/firestore";
 import "firebase/auth";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {useCollectionData} from "react-firebase-hooks/firestore"
-import {useState} from "react";
+import {useRef, useState} from "react";
 import classes from "./forum.module.scss";
 
 if (!firebase.apps.length) {
@@ -33,6 +33,7 @@ export default  function Page  ( )  {
     const sectionClass = user ? classes.sectionchatroom : classes.sectionbutton
     return (
        <>
+           <audio src="/forum.mp3" autoPlay  className={classes.audio}></audio>
            <div className={classes.App}>
             <SignOut/>
 
@@ -68,6 +69,7 @@ function SignOut() {
 }
 
 function ChatRoom() {
+    const dummy = useRef(null)
     const messagesRef = firestore.collection('messages')
 
     const query = messagesRef.orderBy('CreatedAt').limit(25);
@@ -95,13 +97,19 @@ function ChatRoom() {
         });
 
         setFormValue('')
+
+        dummy.current.scrollIntoView({ behavior: 'smooth' });
     }
 
     return(
         <>
             <main className={classes.main}>
             {messages && messages.map(msg => <ChatMessage key={msg.id} message = {msg}/>)}
+                {/* @ts-ignore */}
+                <span ref={dummy}></span>
             </main>
+
+
             <form onSubmit={sendMessage} className={classes.form}>
 
                 <input value={formValue} onChange={(e) => setFormValue(e.target.value)} className={classes.input}/>

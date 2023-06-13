@@ -6,7 +6,7 @@ export default  function Page () {
         <div>
 
             <h1 className={classes.h1}>Это лор Дамирсынба</h1>
-            {/*<audio className={classes.audio} src="/jhoncena.mp3" autoPlay ></audio>*/}
+            <audio className={classes.audio} src="/lore.mp3" autoPlay ></audio>
 
             <p className={classes.lore}>
                 <big> Первая трилогия</big>  <br/>
@@ -99,7 +99,7 @@ export default  function Page () {
 
 
 
-            <p style={{opacity: 0}}>
+            <p className={classes.prod}>
                 <br/>
                 <br/>
                 <br/>
