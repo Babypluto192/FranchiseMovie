@@ -1,4 +1,4 @@
-import Eror from "../../components/eror"
+import Eror from "@/components/eror"
 
 const Eror = () => {
     return (
