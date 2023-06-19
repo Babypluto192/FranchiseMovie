@@ -21,6 +21,17 @@ export default  function patchnote ()   {
 
             </ul>
 
+            <ul className={classes.ul} > <h3 className={classes.h3}> 7.1 Обновление базы фильмов</h3>
+                <li>
+                   Обновлена база фильмов для более удобной работы
+                </li>
+                <li>
+                   Остальные изменения выйдут позже
+                </li>
+
+            </ul>
+
+
 
         </div>
         </div>
