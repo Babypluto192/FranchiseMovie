@@ -39,7 +39,11 @@ export default async function Page ({ params }: { params: { slug: string } })  {
                 break;
             }
         } else {
-            let a:string = params.slug.at(-2) + params.slug.at(-1) || '26'
+            let a:string
+            if(params.slug.at(-2)) {
+                a = params.slug.at(-2) + params.slug.at(-1)
+            }
+
             if( a == data[i]['id'] ) {
                 url = data[i]
                 break;
