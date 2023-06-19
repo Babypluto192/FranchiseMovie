@@ -1,4 +1,4 @@
-import classes from "./osnovniye.module.scss";
+import classes from "./spinOff.module.scss";
 import Movie from "../../components/Movie"
 import Idata from "@/app/osnovniye/Idata";
 
