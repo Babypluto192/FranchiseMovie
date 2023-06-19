@@ -40,9 +40,9 @@ export default async function Page ({ params }: { params: { slug: string } })  {
             }
         } else {
             let a:string
-            if(params.slug.at(-2) != undefined) {
-                a = params.slug.at(-2) + params.slug.at(-1)
-            }
+
+                a = params.slug.at(-2) ?? 1 + params.slug.at(-1)
+
 
             if( a == data[i]['id'] ) {
                 url = data[i]
