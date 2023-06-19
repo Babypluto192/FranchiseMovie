@@ -67,6 +67,12 @@ background: $color;
 
 
 }
+@media screen and (max-device-width: 912px) {
+  .form {
+    height: 8vh;
+  }
+}
+
 
 
 .form {
