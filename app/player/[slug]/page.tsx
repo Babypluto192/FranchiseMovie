@@ -40,7 +40,7 @@ export default async function Page ({ params }: { params: { slug: string } })  {
             }
         } else {
             let a:string
-            if(params.slug.at(-2)) {
+            if(params.slug.at(-2) != undefined) {
                 a = params.slug.at(-2) + params.slug.at(-1)
             }
 
