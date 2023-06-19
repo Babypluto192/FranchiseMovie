@@ -1,5 +1,3 @@
-"use client"
-
 import classes from "./fanati.module.scss";
 import Movie from "../../components/Movie"
 import NextImage from "next/image";

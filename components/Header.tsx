@@ -36,7 +36,7 @@ export default function Header () {
 
                                 <Link href={'/osnovniye'} className="dropdown-item" > Основная вселеная  </Link>
 
-                            <Link href={'/spinOff'} className="dropdown-item" >  Спин-Оффы</Link>
+                            <Link href={'/spinoff'} className="dropdown-item" >  Спин-Оффы</Link>
 
 
                             <Link href={"/trailer"} className="dropdown-item"> Трейлер </Link>
