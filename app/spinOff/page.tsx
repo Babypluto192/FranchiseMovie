@@ -1,4 +1,4 @@
-import classes from "./spinOff.module.scss";
+import classes from "./osnovniye.module.scss";
 import Movie from "../../components/Movie"
 import Idata from "@/app/osnovniye/Idata";
 
@@ -23,20 +23,21 @@ export default async function Osnovniye ()  {
 
     const data:Idata[] = await getData()
 
-
     return (
         <div>
 
-            <h1 className={classes.h1}>Это Спин-оффы Дамирсынба</h1>
+            <h1 className={classes.h1}>Это Спин-оффы</h1>
+
 
 
             {data.map( (el) => {
-                        return (
-                            <div key={el['id']} className={classes.container}>
-                                <Movie id={'damirsinbaspinoff' + el['id']} title={el['title']} rating={el['rating']} url={el['url']}
-                                       preview={el['preview']} film="спин-оффа"/>
-                            </div>
-                        )
+
+                    return (
+                        <div key={el['id']} className={classes.container}>
+                            <Movie id={'damirsinbaspinoff' + el['id']} title={el['title']} rating={el['rating']} url={el['url']}
+                                   preview={el['preview']} film="фильма"/>
+                        </div>
+                    )
 
                 }
 
