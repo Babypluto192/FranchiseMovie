@@ -33,7 +33,7 @@ export default async function Page ({ params }: { params: { slug: string } })  {
 
     for(let i = 0; i < data.length; i++){
 
-        if(params.slug.at(-2) != 1 && params.slug.at(-2) != 2){
+        if(params.slug.at(-2) !== '1' && params.slug.at(-2) !== '2'){
             if(  params.slug.at(-1) == data[i]['id'] ) {
                 url = data[i]
                 break;
