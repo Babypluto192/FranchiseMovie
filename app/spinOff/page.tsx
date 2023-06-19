@@ -6,7 +6,7 @@ import Idata from "@/app/osnovniye/Idata";
 export default async function Osnovniye ()  {
 
     async function getData() {
-        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
+        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbaspinoff')
 
 
 
@@ -30,15 +30,14 @@ export default async function Osnovniye ()  {
             <h1 className={classes.h1}>Это Спин-оффы Дамирсынба</h1>
 
 
-            {data.map( (el,index) => {
-                    if (index > 19 && index < 40) {
+            {data.map( (el) => {
                         return (
                             <div key={el['id']} className={classes.container}>
-                                <Movie id={el['id']} title={el['title']} rating={el['rating']} url={el['url']}
-                                       preview={el['preview']}/>
+                                <Movie id={'damirsinbaspinoff' + el['id']} title={el['title']} rating={el['rating']} url={el['url']}
+                                       preview={el['preview']} film="спин-оффа"/>
                             </div>
                         )
-                    }
+
                 }
 
             )}

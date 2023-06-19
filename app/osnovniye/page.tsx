@@ -30,15 +30,15 @@ export default async function Osnovniye ()  {
 
 
 
-            {data.map( (el,index) => {
-                    if (index < 20) {
+            {data.map( (el) => {
+
                         return (
                         <div key={el['id']} className={classes.container}>
-                            <Movie id={el['id']} title={el['title']} rating={el['rating']} url={el['url']}
-                                   preview={el['preview']}/>
+                            <Movie id={'damirsinbachasti' + el['id']} title={el['title']} rating={el['rating']} url={el['url']}
+                                   preview={el['preview']} film="фильма"/>
                         </div>
                         )
-                    }
+
                 }
 
             )}

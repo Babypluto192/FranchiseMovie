@@ -3,27 +3,19 @@ import NextImage from 'next/image';
 import Link from "next/link";
 
 interface Imovie {
-    id: number
+    id: string
     title: string
     rating: number
     url: string
     preview: string
+    film:string
 }
 
 
 
 const Movie = (props:Imovie) => {
-    let film:string
 
-    if(props.id <= 20) {
-        film = 'фильма'
-    } else if(props.id > 20 && props.id <= 40) {
-        film = 'спин-оффа'
-    } else if(props.id > 40 && props.id <= 48) {
-        film = 'трейлера'
-    } else {
-        film = 'фаната'
-    }
+
     return (
         <div   key={props.id}>
             <NextImage src={props.preview} alt={props.title} width={400}  height={400} className={classes.img}>
@@ -33,7 +25,7 @@ const Movie = (props:Imovie) => {
                 {props.title}
             </p>
             <p>
-               Рейтинг {film} {props.rating} из 10
+               Рейтинг {props.film} {props.rating} из 10
             </p>
 
            <Link className="btn btn-secondary" href={`/player/${props.id}`}>

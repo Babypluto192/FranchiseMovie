@@ -9,7 +9,7 @@ import Idata from "@/app/osnovniye/Idata";
 
 export default  async function Osnovniye ()  {
     async function getData() {
-        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti')
+        const res = await fetch('https://shau1921.pythonanywhere.com/api/v1/damirsinbafanati')
 
 
 
@@ -36,16 +36,15 @@ export default  async function Osnovniye ()  {
             <audio src="/fanati.mp3" autoPlay  className={classes.audio}></audio>
 
 
-            {data.map( (el,index) => {
-                    if (index > 47) {
+            {data.map( (el) => {
                         return (
                             <div key={el['id']} className={classes.container}>
                                 <Movie id={el['id']} title={el['title']} rating={el['rating']} url={el['url']}
-                                       preview={el['preview']}/>
+                                       preview={el['preview']} film="фаната"/>
 
                             </div>
                         )
-                    }
+
                 }
 
             )}
