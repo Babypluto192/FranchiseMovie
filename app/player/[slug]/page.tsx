@@ -1,8 +1,9 @@
 import Idata from "@/app/osnovniye/Idata";
 
-let url:any
+
 export default async function Page ({ params }: { params: { slug: string } })  {
-    let ApiUrl:string
+
+    let ApiUrl:string = 'https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti'
     if(params.slug.startsWith("damirsinbachasti")) {
         ApiUrl = "https://shau1921.pythonanywhere.com/api/v1/damirsinbachasti"
     } else if(params.slug.startsWith("damirsinbafanati")) {
@@ -30,23 +31,27 @@ export default async function Page ({ params }: { params: { slug: string } })  {
 
 
 
+    let a:string
 
     for(let i = 0; i < data.length; i++){
+        if(params.slug.at(-2) === '1' || params.slug.at(-2) === '2') {
+            a = params.slug.at(-2) + params.slug.at(-1)
+            if(a == data[i].id) {
+                return  (  <iframe width="100%" height="800" src={data[i].url}
+                                   title="YouTube video player"
+                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                   allowFullScreen></iframe>
+                )
 
-        if(params.slug.at(-2) !== '1' && params.slug.at(-2) !== '2'){
-            if(  params.slug.at(-1) == data[i]['id'] ) {
-                url = data[i]
-                break;
             }
         } else {
-            let a:string
-
-                a = params.slug.at(-2) ?? '1' + params.slug.at(-1) ?? '2'
-
-
-            if( a == data[i]['id'] ) {
-                url = data[i]
-                break;
+            if(params.slug.at(-1) == data[i].id) {
+                return (
+                    <iframe width="100%" height="800" src={data[i].url}
+                               title="YouTube video player"
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                               allowFullScreen></iframe>
+                )
             }
         }
 
@@ -57,14 +62,5 @@ export default async function Page ({ params }: { params: { slug: string } })  {
 
 
 
-    return (
-        <>
 
-            <iframe width="100%" height="800" src={url['url']}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen></iframe>
-        </>
-
-    );
 };

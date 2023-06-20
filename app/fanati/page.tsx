@@ -37,7 +37,7 @@ export default  async function Osnovniye ()  {
             {data.map( (el) => {
                         return (
                             <div key={el['id']} className={classes.container}>
-                                <Movie id={el['id']} title={el['title']} rating={el['rating']} url={el['url']}
+                                <Movie id={'damirsinbafanati' + el['id']} title={el['title']} rating={el['rating']} url={el['url']}
                                        preview={el['preview']} film="фаната"/>
 
                             </div>
