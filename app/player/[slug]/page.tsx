@@ -37,7 +37,7 @@ export default async function Page ({ params }: { params: { slug: string } })  {
         if(params.slug.at(-2) === '1' || params.slug.at(-2) === '2') {
 
 
-            a = params.slug.at(-2) + params.slug.at(-1) ?? '12'
+            a = params.slug.at(-2)! + params.slug.at(-1)!
 
             if(a == data[i].id) {
                 return  (  <iframe width="100%" height="800" src={data[i].url}
