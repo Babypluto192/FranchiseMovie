@@ -41,6 +41,7 @@ export default async function Osnovniye ()  {
                 }
 
             )}
+
             <audio src="/spinoff.mp3" autoPlay className={classes.audio} ></audio>
         </div>
     );
