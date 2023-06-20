@@ -35,7 +35,12 @@ export default async function Page ({ params }: { params: { slug: string } })  {
 
     for(let i = 0; i < data.length; i++){
         if(params.slug.at(-2) === '1' || params.slug.at(-2) === '2') {
-            a = params.slug.at(-2) + params.slug.at(-1)
+
+            if(params.slug.at(-2) != undefined){
+                if(params.slug.at(-1) != undefined) {
+                    a = params.slug.at(-2) + params.slug.at(-1)
+                }
+            }
             if(a == data[i].id) {
                 return  (  <iframe width="100%" height="800" src={data[i].url}
                                    title="YouTube video player"
