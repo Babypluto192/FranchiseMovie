@@ -11,13 +11,13 @@ import classes from "./forum.module.scss";
 
 if (!firebase.apps.length) {
     firebase.initializeApp({
-        apiKey: "AIzaSyC3XTkJGHuG4ZY3O3_moK3TNYLzpbGZH4Q",
-        authDomain: "damirsinbaforum.firebaseapp.com",
-        projectId: "damirsinbaforum",
-        storageBucket: "damirsinbaforum.appspot.com",
-        messagingSenderId: "423008084724",
-        appId: "1:423008084724:web:9997a2e2182831dcc934a1",
-        measurementId: "G-S12EEE89ME"});
+        apiKey: "AIzaSyBUiNZvg63CfKXGSbvYz6ARCFbbyYWoT4Y",
+        authDomain: "forum-e8421.firebaseapp.com",
+        projectId: "forum-e8421",
+        storageBucket: "forum-e8421.appspot.com",
+        messagingSenderId: "754495494610",
+        appId: "1:754495494610:web:0545a637d1668a2938900b",
+        measurementId: "G-R69LB1K9EV"});
 }
 
 

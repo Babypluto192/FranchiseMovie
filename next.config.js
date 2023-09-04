@@ -33,7 +33,12 @@ module.exports = {
             hostname: "youtu.be",
             port: ""    ,
             pathname: "**********"
-            }
+            },{
+                protocol: "https",
+                hostname: "whey.kz",
+                port: ""    ,
+                pathname: "/wp-content/uploads/2020/11/placeholder.png"
+            },
 
         ],
     },

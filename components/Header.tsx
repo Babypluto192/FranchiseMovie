@@ -22,10 +22,10 @@ export default function Header () {
 
 
                 <NextImage
-                    src="/SYH4dAPuuZA__1_-removebg-preview.png"
+                    src="/placeholder.png"
                     alt="" className={classes.img} height="40"
             width="70"/>
-                <Link href={'/'} className="navbar-brand"> Дамирсынба </Link>
+                <Link href={'/'} className="navbar-brand"> Видео сайт </Link>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
