@@ -1,5 +1,9 @@
 import classes from "./home.module.scss";
+import {Metadata} from 'next';
 
+export const metadata: Metadata = {
+    title: 'Franchise Site',
+};
 export default function Home ()  {
     return ( <>
 
