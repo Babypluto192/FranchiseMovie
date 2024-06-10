@@ -9,3 +9,46 @@
 .audio {
   opacity: 0;
 }
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image {
+  width: calc(50% - 10px); /* Устанавливаем ширину изображения на половину доступной ширины минус отступы */
+  margin: 0; /* Убираем отступы между изображениями */
+}
+
+.footer {
+  background-color: black;
+  color: black;
+  padding: 20px; /* Добавляем немного отступа вокруг содержимого футера */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0; /* Убираем внешние отступы у текста */
+}
+
+.social-icons {
+  display: flex;
+  height: auto;
+}
+
+.icon {
+  width: 30px; /* Устанавливаем одинаковую ширину для всех иконок */
+  height: auto; /* Автоматический расчет высоты, основанный на пропорциях изображения */
+}
+
+.footer-square {
+  background-color: #5f5f5f; /* Серый цвет фона */
+  padding: 20px; /* Отступы внутри квадрата */
+  border-radius: 10px; /* Закругление углов */
+}
